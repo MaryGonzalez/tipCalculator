@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tip Calculator</title>
+  <link rel="icon" href="img/calculator.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+    
+        <form>       
+                
+            <div class="form-group col-md-12">
+                <h2>Tip Calculator</h2>
+            </div>
+                        
+            <!--Total amount on bill-->
+            <div class="form-group row">
+                <label for="checkAmountLabel" class="col-sm-6 col-form-label">Check Amount</label>
+                <div class="col-sm-6">
+                <input type="text" class="form-control" id="checkAmount">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="serviceRatingLabel" class="col-sm-6 col-form-label">How was your service?</label>
+                <div class="col-sm-6">
+                <select class="form-control" id="serviceRating">
+                    <option value="0">--Select--</option>
+                    <option value="option25">25% Service Excellent!</option>
+                    <option value="option20">20% Service Great!</option>
+                    <option value="option15">15% Service Good!</option>
+                    <option value="option10">10% Service Fair</option>
+                    <option value="option5">5% Service Poor</option>
+                </select>
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <label for="totalPeopleLabel" class="col-sm-8 col-form-label">How many people are sharing the bill?</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" id="totalPeople">
+                </div>
+            </div>
+            
+            <div class="form-group col-md-12" id="buttons">
+                <!--Calculate button-->
+                <button type="button" class="btn btn-primary" id="calculateButton">Calculate</button>  
+                
+                <!--Clear button-->
+                <button type="button" class="btn btn-secondary" id="clearButton">Clear</button>     
+            </div>
+            
+            
+            <div id="receipt">
+                    <div class="form-group row" id="results">
+                        <label for="totalTipPersonLabel" class="col-sm-6 col-form-label">Tip per person</label>
+                        <div class="col-sm-6">
+                        <input type="text" class="form-control" id="totalTipPerson">
+                        </div>
+                    </div>
+            </div>
+           
+            
+           
+        </form>
+        
+    </div>
+    
+    
+    
+  <script src="javascript.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
